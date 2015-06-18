@@ -1,0 +1,62 @@
+﻿(function () {
+                // initializing WOW.js plugin
+                new WOW().init();
+                $("#form-demo").submit(function(e){
+                	$(this).reset();
+                });
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+				$("input[type = 'text']").iForm({
+				    mode: "friendly",
+				    appliesTo: "text"
+				});
+
+				$("input[type = 'email']").iForm({
+				    mode: "friendly",
+				    appliesTo: "email"
+				});
+
+				$("input[type = 'tel']").iForm({
+				    mode: "friendly",
+				    appliesTo: "tel"
+				});
+
+				$("input[type = 'url']").iForm({
+				    mode: "friendly",
+				    appliesTo: "url"
+				});
+
+				$("input[type = 'num']").iForm({
+				    mode: "friendly",
+				    appliesTo: "num"
+				});
+			})();

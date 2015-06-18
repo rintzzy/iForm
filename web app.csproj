@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{442A4D21-2978-4DF0-9649-B4F15191A71C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>web_app</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.rb" />
+    <None Include="js\interact.coffee" />
+    <None Include="js\interact.js.map">
+      <DependentUpon>interact.js</DependentUpon>
+    </None>
+    <None Include="js\interact.min.js.map">
+      <DependentUpon>interact.min.js</DependentUpon>
+    </None>
+    <None Include="sass\app.css.map">
+      <DependentUpon>app.css</DependentUpon>
+    </None>
+    <None Include="sass\app.scss" />
+    <None Include="sass\ie.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_alerts.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_background-variant.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_border-radius.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_buttons.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_center-block.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_clearfix.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_forms.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_gradients.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_grid.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_hide-text.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_image.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_labels.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_list-group.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_nav-vertical-align.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_opacity.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_pagination.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_panels.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_progress-bar.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_reset-filter.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_resize.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_responsive-visibility.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_size.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_tab-focus.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_table-row.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_text-overflow.scss" />
+    <None Include="sass\lib\bootstrap\mixins\_vendor-prefixes.scss" />
+    <None Include="sass\lib\bootstrap\_alerts.scss" />
+    <None Include="sass\lib\bootstrap\_badges.scss" />
+    <None Include="sass\lib\bootstrap\_breadcrumbs.scss" />
+    <None Include="sass\lib\bootstrap\_button-groups.scss" />
+    <None Include="sass\lib\bootstrap\_buttons.scss" />
+    <None Include="sass\lib\bootstrap\_carousel.scss" />
+    <None Include="sass\lib\bootstrap\_close.scss" />
+    <None Include="sass\lib\bootstrap\_code.scss" />
+    <None Include="sass\lib\bootstrap\_component-animations.scss" />
+    <None Include="sass\lib\bootstrap\_dropdowns.scss" />
+    <None Include="sass\lib\bootstrap\_forms.scss" />
+    <None Include="sass\lib\bootstrap\_glyphicons.scss" />
+    <None Include="sass\lib\bootstrap\_grid.scss" />
+    <None Include="sass\lib\bootstrap\_input-groups.scss" />
+    <None Include="sass\lib\bootstrap\_jumbotron.scss" />
+    <None Include="sass\lib\bootstrap\_labels.scss" />
+    <None Include="sass\lib\bootstrap\_list-group.scss" />
+    <None Include="sass\lib\bootstrap\_media.scss" />
+    <None Include="sass\lib\bootstrap\_mixins.scss" />
+    <None Include="sass\lib\bootstrap\_modals.scss" />
+    <None Include="sass\lib\bootstrap\_navbar.scss" />
+    <None Include="sass\lib\bootstrap\_navs.scss" />
+    <None Include="sass\lib\bootstrap\_normalize.scss" />
+    <None Include="sass\lib\bootstrap\_pager.scss" />
+    <None Include="sass\lib\bootstrap\_pagination.scss" />
+    <None Include="sass\lib\bootstrap\_panels.scss" />
+    <None Include="sass\lib\bootstrap\_popovers.scss" />
+    <None Include="sass\lib\bootstrap\_print.scss" />
+    <None Include="sass\lib\bootstrap\_progress-bars.scss" />
+    <None Include="sass\lib\bootstrap\_responsive-embed.scss" />
+    <None Include="sass\lib\bootstrap\_responsive-utilities.scss" />
+    <None Include="sass\lib\bootstrap\_scaffolding.scss" />
+    <None Include="sass\lib\bootstrap\_tables.scss" />
+    <None Include="sass\lib\bootstrap\_theme.scss" />
+    <None Include="sass\lib\bootstrap\_thumbnails.scss" />
+    <None Include="sass\lib\bootstrap\_tooltip.scss" />
+    <None Include="sass\lib\bootstrap\_type.scss" />
+    <None Include="sass\lib\bootstrap\_utilities.scss" />
+    <None Include="sass\lib\bootstrap\_variables.scss" />
+    <None Include="sass\lib\bootstrap\_wells.scss" />
+    <None Include="sass\lib\_bootstrap-compass.scss" />
+    <None Include="sass\lib\_bootstrap.scss" />
+    <None Include="sass\print.scss" />
+    <None Include="sass\screen.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\animate.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\goggles.css" />
+    <Content Include="css\ie.css" />
+    <Content Include="css\prettify-js.css" />
+    <Content Include="css\prettify.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="img\badge1.png" />
+    <Content Include="img\badge2.png" />
+    <Content Include="img\fresh_snow.png" />
+    <Content Include="img\green_cup.png" />
+    <Content Include="img\honey_im_subtle.png" />
+    <Content Include="js\classie.js" />
+    <Content Include="js\interact.js">
+      <DependentUpon>interact.coffee</DependentUpon>
+    </Content>
+    <Content Include="js\interact.min.js">
+      <DependentUpon>interact.js</DependentUpon>
+    </Content>
+    <Content Include="js\jQuery.iForm.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\prettify-js.js" />
+    <Content Include="js\prettify.js" />
+    <Content Include="js\start.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="sass\app.css">
+      <DependentUpon>app.scss</DependentUpon>
+    </Content>
+    <Content Include="sass\app.min.css">
+      <DependentUpon>app.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
