@@ -29,9 +29,9 @@
   function emailCorrect(){
     var b = $(this).val();
     var ut,vt,wt,xt;
-  if(/outlook|gmail|live|facebook|yahoo|ymail|rediff/g.test(b)){	
+  if(/outlook|gmail|live|facebook|yahoo|ymail|rediff|fravashitech/g.test(b)){	
 	    ut = b.replace(/([#~!`$%\^&*\-\+=\\{\}\?\/\,(\)[\]"|;:'<>@]+)/g,"");
-	   	vt = ut.search(/outlook|gmail|live|facebook|yahoo|ymail|rediff/)
+	   	vt = ut.search(/outlook|gmail|live|facebook|yahoo|ymail|rediff|fravashitech/)
             wt = ut.slice(0,vt);
 			xt = ut.slice(vt,ut.length);
 			yt = wt + "@" + xt;
